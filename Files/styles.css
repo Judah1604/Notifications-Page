@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+/* line 8, styles.scss */
+* {
+  margin: 0;
+  overflow-x: hidden; }
+
+/* line 13, styles.scss */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #f7fafd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 16px; }
+
+/* line 23, styles.scss */
+.card {
+  font-size: 0.75em;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 600px; }
+  /* line 32, styles.scss */
+  .card header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 37, styles.scss */
+    .card header h1 {
+      overflow: hidden;
+      padding: 5px; }
+      /* line 41, styles.scss */
+      .card header h1 .noOfNotifications {
+        font-size: 0.8em;
+        padding: 5px 15px;
+        background-color: #0a317b;
+        color: white;
+        border-radius: 5px; }
+    /* line 50, styles.scss */
+    .card header .markAll {
+      font-size: 1.1em;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      cursor: pointer; }
+      /* line 55, styles.scss */
+      .card header .markAll:hover {
+        color: #0a317b; }
+  /* line 61, styles.scss */
+  .card .notifications {
+    margin-top: 2.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    /* line 69, styles.scss */
+    .card .notifications .unread {
+      background-color: #f7fafd; }
+    /* line 73, styles.scss */
+    .card .notifications .notification {
+      width: 100%;
+      border-radius: 10px;
+      display: -webkit-box;
+      -webkit-box-align: center;
+      gap: 15px;
+      width: -webkit-fill-available;
+      padding: 15px; }
+      /* line 82, styles.scss */
+      .card .notifications .notification .writer-img {
+        width: 50px;
+        height: 50px; }
+      /* line 87, styles.scss */
+      .card .notifications .notification h2 {
+        font-size: 1.5em; }
+      /* line 93, styles.scss */
+      .card .notifications .notification .textContent .content {
+        padding: 3px; }
+        /* line 96, styles.scss */
+        .card .notifications .notification .textContent .content span {
+          font-weight: 800;
+          font-size: 1.1em;
+          -webkit-transition: 0.3s;
+          transition: 0.3s;
+          cursor: pointer; }
+          /* line 102, styles.scss */
+          .card .notifications .notification .textContent .content span:hover {
+            color: #0a317b; }
+        /* line 107, styles.scss */
+        .card .notifications .notification .textContent .content .group {
+          color: #0a317b; }
+        /* line 111, styles.scss */
+        .card .notifications .notification .textContent .content .post {
+          color: #5e6778;
+          -webkit-transition: 0.3s;
+          transition: 0.3s;
+          cursor: pointer; }
+          /* line 116, styles.scss */
+          .card .notifications .notification .textContent .content .post:hover {
+            color: #0a317b; }
+      /* line 123, styles.scss */
+      .card .notifications .notification .message {
+        padding: 10px;
+        width: 80%;
+        border: 1px solid #939dae;
+        margin-top: 10px;
+        border-radius: 5px;
+        line-height: 1.4;
+        font-size: 1.2em;
+        color: #5e6778;
+        cursor: pointer;
+        -webkit-transition: 0.4s;
+        transition: 0.4s; }
+        /* line 135, styles.scss */
+        .card .notifications .notification .message:hover {
+          background-color: #dde7ee; }
+      /* line 140, styles.scss */
+      .card .notifications .notification .circle {
+        background-color: #f65351;
+        border-radius: 50%;
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        margin-left: 2px; }
+      /* line 149, styles.scss */
+      .card .notifications .notification .image {
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        margin-left: auto; }
+        /* line 155, styles.scss */
+        .card .notifications .notification .image img {
+          width: 100%;
+          height: 100%; }
+      /* line 161, styles.scss */
+      .card .notifications .notification .time {
+        color: #939dae;
+        font-size: 1.1em; }
+
+/* line 170, styles.scss */
+footer .attribution {
+  font-size: 11px;
+  text-align: center; }
+/* line 175, styles.scss */
+footer .attribution a {
+  color: #3e52a3; }
+
+@media screen and (max-width: 375px) {
+  /* line 181, styles.scss */
+  .card {
+    width: 90%; }
+    /* line 184, styles.scss */
+    .card .textContent {
+      width: 95% !important; }
+      /* line 187, styles.scss */
+      .card .textContent .message {
+        width: 75% !important; }
+      /* line 191, styles.scss */
+      .card .textContent .content {
+        width: 80% !important; } }
+
+/*# sourceMappingURL=styles.css.map */
